@@ -22,8 +22,8 @@ jobs:
           node-version: 18
           cache: "pnpm"
 
-      - name: 📦 Install pnpm
-        run: npm install -g pnpm@8
+      - name: 🔧 Enable corepack
+        run: corepack enable
 
       - name: 📥 Install Dependencies
         run: pnpm install
