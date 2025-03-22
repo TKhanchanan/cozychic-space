@@ -27,6 +27,9 @@ jobs:
         with:
           version: 8
 
+      - name: 🛠 Add pnpm to PATH
+        run: echo "$(pnpm bin)" >> $GITHUB_PATH
+
       - name: 📥 Install Dependencies
         run: pnpm install
 
