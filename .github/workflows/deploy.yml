@@ -6,7 +6,8 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write
+  pages: write
 
 jobs:
   build:
@@ -38,3 +39,4 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
+          token: ${{ secrets.SECRET_DEV }}
