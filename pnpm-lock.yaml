@@ -4,6 +4,7 @@ specifiers:
   '@vitejs/plugin-vue': ^5.2.1
   '@vue/tsconfig': ^0.7.0
   '@vueuse/core': ^13.0.0
+  crypto-js: ^4.2.0
   dexie: ^4.0.11
   pako: ^2.1.0
   phaser: ^3.88.2
@@ -19,6 +20,7 @@ specifiers:
 
 dependencies:
   '@vueuse/core': 13.0.0_vue@3.5.13
+  crypto-js: 4.2.0
   dexie: 4.0.11
   pako: 2.1.0
   phaser: 3.88.2
@@ -800,6 +802,10 @@ packages:
   /confbox/0.2.1:
     resolution: {integrity: sha512-hkT3yDPFbs95mNCy1+7qNKC6Pro+/ibzYxtM2iqEigpf0sVw+bg4Zh9/snjsBcf990vfIsg5+1U7VyiyBb3etg==}
     dev: true
+
+  /crypto-js/4.2.0:
+    resolution: {integrity: sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==}
+    dev: false
 
   /csstype/3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
