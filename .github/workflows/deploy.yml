@@ -13,21 +13,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🔄 Checkout Repository
+      - name: 🛎 Checkout Repository
         uses: actions/checkout@v3
 
-      - name: 🔧 Setup Node.js
+      - name: 🟢 Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: "pnpm"
 
-      - name: 📦 Install Dependencies
-        run: |
-          npm install -g pnpm
-          pnpm install
+      - name: 📦 Install pnpm
+        run: npm install -g pnpm
 
-      - name: ⚡ Build Project
+      - name: 📥 Install Dependencies
+        run: pnpm install
+
+      - name: 🔨 Build Project
         run: pnpm run build
 
       - name: 🚀 Deploy to GitHub Pages
