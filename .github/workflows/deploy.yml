@@ -20,10 +20,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: "pnpm"
+          cache: "npm"
 
-      - name: 🔧 Enable Corepack (pnpm)
-        run: corepack enable
+      - name: 🔧 Install pnpm
+        run: npm install -g pnpm@8
 
       - name: 📥 Install Dependencies
         run: pnpm install
